@@ -1,3 +1,9 @@
 <p>
-  routing module works!
+  data fetched from backend api using http service
 </p>
+
+<ul>
+  <li *ngFor="let prof of profile">
+    {{prof.first_name}}
+  </li>
+</ul>

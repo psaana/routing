@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../app.service';
 
 @Component({
   selector: 'app-routingmodule',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./routingmodule.component.css']
 })
 export class RoutingmoduleComponent implements OnInit {
-
-  constructor() { }
+  profile = [];
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
+    this.userService.getUser().subscribe(data => 
+      this.profile = data.data
+    );
   }
 
 }
