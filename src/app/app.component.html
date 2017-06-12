@@ -1,5 +1,5 @@
 <!--The whole content below can be removed with the new code.-->
-<nav class="navbar navbar-inverse">
+<!--<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">WebSiteName</a>
@@ -11,8 +11,21 @@
       <li><a routerLink="">Home component</a></li>
     </ul>
   </div>
-</nav>
+</nav>-->
+<div class="container" style="        margin-top: 40px;">
+  <div class="col-md-4">
+    <ul class="nav navbar-nav">
+    
+      <li><button class="btn btn-success"><a routerLink="/routingmodule">router module link</a></button></li><br><br>
+      <li><button class="btn btn-success"><a routerLink="/routingmodule1">router module1 link</a></button></li><br><br>
+      <li><button class="btn btn-success"><a routerLink="">Home component</a></button></li>
+    </ul>
+  </div>
+  <div class="col-md-8">
+    <router-outlet></router-outlet>
+  </div>
+</div>
 <!--<a routerLink="/routingmodule">router module link</a>
 <a routerLink="/routingmodule1">router module1 link</a>
 <a routerLink="">Home component</a>-->
-<router-outlet></router-outlet>
+
